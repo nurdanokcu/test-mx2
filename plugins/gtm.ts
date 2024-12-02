@@ -2,11 +2,16 @@ export default defineNuxtPlugin((_nuxtApp) => {
   if (import.meta.client) {
     // Cookiebot Script
     const cookiebotScript = document.createElement('script');
-    cookiebotScript.src = 'https://consent.cookiebot.com/f9cf272b-30ae-40a4-b72e-7dc360a28384/cd.js';
+    cookiebotScript.src
+      = 'https://consent.cookiebot.com/f9cf272b-30ae-40a4-b72e-7dc360a28384/cd.js';
     cookiebotScript.type = 'text/javascript';
     cookiebotScript.id = 'CookieDeclaration';
-    cookiebotScript.async = true;
     document.head.appendChild(cookiebotScript);
+
+    // Additional field for gtag
+    const gtagScript = document.createElement('script');
+    gtagScript.innerHTML = 'window[\'gtag_enable_tcf_support\'] = true;';
+    document.head.appendChild(gtagScript);
 
     // Google Tag Manager main script
     const script = document.createElement('script');
@@ -27,11 +32,5 @@ export default defineNuxtPlugin((_nuxtApp) => {
     iframe.style.visibility = 'hidden';
     noscript.appendChild(iframe);
     document.body.insertBefore(noscript, document.body.firstChild);
-
-    // Add TCF (Transparency and Consent Framework) Support
-    const tcfScript = document.createElement('script');
-    tcfScript.innerHTML = `window['gtag_enable_tcf_support'] = true;`;
-    tcfScript.type = 'text/javascript';
-    document.head.appendChild(tcfScript);
   }
 });
