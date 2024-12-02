@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@vueuse/nuxt', 'nuxt3-meta-pixel', '@nuxtjs/sitemap', '@nuxt/image', '@vite-pwa/nuxt', '@nuxtjs/robots', '@nuxt/eslint', 'nuxt-seo-utils', 'nuxt-security'],
+  modules: ['@vueuse/nuxt', 'nuxt3-meta-pixel', '@nuxtjs/sitemap', '@nuxt/image', '@vite-pwa/nuxt', '@nuxtjs/robots', '@nuxt/eslint', 'nuxt-seo-utils'],
   plugins: ['~/plugins/gtm.ts'],
   devtools: {
     enabled: true,
@@ -93,10 +93,5 @@ export default defineNuxtConfig({
   },
   robots: {
     disallow: ['/beta'],
-  },
-  security: {
-    headers: {
-      contentSecurityPolicy: false,
-    },
   },
 });
