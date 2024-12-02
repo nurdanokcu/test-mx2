@@ -98,6 +98,11 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'img-src': ['\'self\'', 'https:', 'data:', process.env.BASE_URL || ''],
+        'script-src': [
+            "'self'",
+            'https://consent.cookiebot.com',
+            'https://www.googletagmanager.com',
+          ],
       },
     },
   },
