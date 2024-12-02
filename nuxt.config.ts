@@ -1,12 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@vueuse/nuxt', 'nuxt3-meta-pixel', '@nuxtjs/sitemap', '@nuxt/image', '@vite-pwa/nuxt', '@nuxtjs/robots', '@nuxt/eslint', 'nuxt-seo-utils'],
+  modules: ['@vueuse/nuxt', 'nuxt3-meta-pixel', '@nuxtjs/sitemap', '@nuxt/image', '@vite-pwa/nuxt', '@nuxtjs/robots', '@nuxt/eslint'],
   plugins: ['~/plugins/gtm.ts'],
   devtools: {
     enabled: true,
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
       meta: [
         {
           charset: 'utf-8',
