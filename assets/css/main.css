@@ -1,0 +1,189 @@
+:root {
+  --blue-main: #171fd6;
+  --blue-darker: #030bc2;
+  --blue-darkest: #0000a4;
+  --blue-lighter: #2b33ea;
+  --blue-lightest: #3f47fe;
+  --main-lightest: #636aff;
+  --blue-white-hover: #f0f4ff;
+  --purple-ai-related: #9747ff;
+  --purple-ai-background: rgba(151, 71, 255, 0.08);
+  --purple-ai-background-hover: rgba(151, 71, 255, 0.16);
+  --purple-ai-background-active: rgba(151, 71, 255, 0.24);
+  --purple-dark: #8333eb;
+  --purple-darker: #6f1fd7;
+  --purple-darkest: #5b0bc3;
+  --purple-light: #ab5bff;
+  --purple-lighter: #b76fff;
+  --purple-lightest: #ba83ff;
+  --orange-attention: #ee850a;
+  --orange-darkest: #c34e00;
+  --orange-darker: #d76200;
+  --orange-dark: #eb7600;
+  --orange-light: #ff9e14;
+  --orange-lighter: #ffb228;
+  --orange-notification: #ffc700;
+  --orange-lightest: #fff6e0;
+  --red-error: #ff3d00;
+  --red-darkest: #c30100;
+  --red-darker: #d71500;
+  --red-dark: #eb2900;
+  --red-light: #ff5114;
+  --red-lighter: #ff6528;
+  --red-lightest: #ffe1d4;
+  --green-approval: #3a9f44;
+  --green-dark: #4f9756;
+  --green-darker: #3b8342;
+  --green-darkest: #276f2e;
+  --green-light: #77bf7e;
+  --green-lighter: #8bd392;
+  --green-lightest: #e7fce9;
+  --linkedin: #adc9ff;
+  --facebook: #3246f5;
+  --instagram: linear-gradient(
+    162.72deg,
+    #f532bf 0%,
+    #d33939 34.37%,
+    #ffe600 64.58%,
+    #da32f5 100%
+  );
+  --google: linear-gradient(
+    90deg,
+    #0086f9 13.08%,
+    #ff4131 13.09%,
+    #ff4131 41.16%,
+    #febd00 41.17%,
+    #febd00 66.13%,
+    #0086f9 66.14%,
+    #0086f9 91.09%,
+    #00aa4a 91.1%
+  );
+  --bw-white: #faf9f9;
+  --bw-almost-white: #ecf0f4;
+  --base-light-frenchgrayI: #cdd0dd;
+  --base-light-frenchgrayII: #b6bace;
+  --bw-gray: #788494;
+  --bw-gray-dark: #323232;
+  --bw-lightest: #505c6c;
+  --bw-lighter: #343847;
+  --bw-black: #0d0c28;
+  --main-background: #dbdfec;
+  --bw-background: rgba(115, 115, 115, 0.08);
+  --home-section-background: linear-gradient(
+    90deg,
+    #9747ff 9.96%,
+    #0000a4 89.02%
+  );
+  --ps-website-theme: linear-gradient(
+    111.68deg,
+    #2400ff 0.23%,
+    #eb6f0e 101.08%
+  );
+  --ps-website-theme-hover: linear-gradient(
+    111.68deg,
+    #1e00d1 0.23%,
+    #c5590a 101.08%
+  );
+  --home-background: linear-gradient(98.27deg, #ffffff 1.88%, #e5ebf3 90.65%);
+  --hover-dropdown-white: #efeeee;
+  --active-dropdown-white: #dfdede;
+  --skeleton-background: #dbdbdb;
+  --skeleton-highlight: #ebe9e9;
+  --google-skeleton-gray: #5f6368;
+  --loading-box-background: #f4f4f4;
+  --header-height: 80px;
+  --admin-navbar-height: 64px;
+  --default-nav-width: 320px;
+  --max-width-default: 1600px;
+  --max-width-registration-sm: 860px;
+  --max-width-registration-m: 1100px;
+  --max-width-dashboard: 1400px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+label,
+footer,
+header nav,
+section {
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo", Arial, sans-serif;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+}
+
+a:-webkit-any-link:focus-visible {
+  outline-offset: none;
+}
+
+a:-webkit-any-link:focus {
+  outline-offset: none;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+.common-box-shadow {
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.25);
+}

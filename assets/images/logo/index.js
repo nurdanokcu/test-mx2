@@ -1,0 +1,12 @@
+export { default as instagramYellow } from './instagram-yellow.webp';
+export { default as facebookLogo } from './facebook.webp';
+export { default as googleLogo } from './google.webp';
+export { default as calendlyLogo } from './calendly_logo.webp';
+export { default as twitterLogo } from './twitter.webp';
+export { default as linkedinLogo } from './linkedIn.webp';
+export { default as youtubeLogo } from './youtube.webp';
+export { default as facebookCircle } from './facebook-circle.webp';
+export { default as instagramLogo } from './instagram.webp';
+export { default as tiktokLogo } from './tikTok.webp';
+export { default as businessOneLogo } from './to_be_deleted1.png';
+export { default as businessTwoLogo } from './to_be_deleted2.png';
